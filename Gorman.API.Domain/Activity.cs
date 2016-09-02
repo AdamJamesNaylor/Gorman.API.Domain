@@ -1,22 +1,23 @@
 ﻿
 namespace Gorman.API.Domain {
-    using System.Collections.ObjectModel;
+    using Newtonsoft.Json;
 
-    public class Activity {
-        public int Id { get; set; }
+    public class Activity
+        : BaseResource {
 
-        public int ParentId { get; set; }
-        public Collection<Activity> Children { get; set; }
+        [JsonProperty("id")]
+        public long Id { get; set; }
 
-        public int MapId { get; set; }
+        [JsonProperty("parent_id")]
+        public long ParentId { get; set; }
 
-        public Collection<Actor> Actors { get; set; }
-        public Collection<Action> Actions { get; set; }
+        [JsonProperty("map_id")]
+        public long MapId { get; set; }
 
-        public Activity() {
-            Children = new Collection<Activity>();
-            Actors = new Collection<Actor>();
-            Actions = new Collection<Action>();
-        }
+        [JsonProperty("map_url")]
+        public string MapUrl { get; set; }
+
+        [JsonProperty("actions_url")]
+        public string ActionsUrl { get; set; }
     }
 }

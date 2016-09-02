@@ -4,8 +4,17 @@ namespace Gorman.API.Domain {
     using Newtonsoft.Json;
 
     public class EndpointListResponse {
-        [JsonProperty("map_url")]
-        public string MapUrl { get; set; }
+        [JsonProperty("maps_url")]
+        public string MapsUrl { get; set; }
+
+        [JsonProperty("activities_url")]
+        public string ActivitiesUrl { get; set; }
+
+        [JsonProperty("actors_url")]
+        public string ActorsUrl { get; set; }
+
+        [JsonProperty("actions_url")]
+        public string ActionsUrl { get; set; }
     }
 
     public class Response<T> {
