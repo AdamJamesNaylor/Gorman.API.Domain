@@ -15,5 +15,8 @@ namespace Gorman.API.Domain {
         [JsonProperty("actors_url")]
         public string ActorsUrl { get; set; }
 
+        [JsonProperty("tile_url")]
+        public string TileUrl { get; set; }
+
     }
 }
