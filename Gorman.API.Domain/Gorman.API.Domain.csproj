@@ -47,7 +47,8 @@
     <Compile Include="Activity.cs" />
     <Compile Include="Actor.cs" />
     <Compile Include="BaseResource.cs" />
-    <Compile Include="EndpointListResponse.cs" />
+    <Compile Include="EndpointList.cs" />
+    <Compile Include="Response.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Phase.cs" />
     <Compile Include="PhaseListGetModel.cs" />
