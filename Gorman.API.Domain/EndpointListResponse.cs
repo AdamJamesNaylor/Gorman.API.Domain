@@ -3,7 +3,7 @@ namespace Gorman.API.Domain {
     using System.Collections.ObjectModel;
     using Newtonsoft.Json;
 
-    public class EndpointListResponse {
+    public class EndpointList {
         [JsonProperty("maps_url")]
         public string MapsUrl { get; set; }
 
