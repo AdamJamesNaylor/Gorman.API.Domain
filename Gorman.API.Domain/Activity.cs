@@ -1,5 +1,6 @@
 ﻿
 namespace Gorman.API.Domain {
+    using System.Collections.Generic;
     using Newtonsoft.Json;
 
     public class Activity
@@ -19,5 +20,8 @@ namespace Gorman.API.Domain {
 
         [JsonProperty("actions_url")]
         public string ActionsUrl { get; set; }
+
+        [JsonProperty("actions")]
+        public IEnumerable<Action> Actions { get; set; }
     }
 }
