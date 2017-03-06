@@ -23,5 +23,8 @@ namespace Gorman.API.Domain {
 
         [JsonProperty("actions")]
         public IEnumerable<Action> Actions { get; set; }
+
+        [JsonProperty("actors")]
+        public IEnumerable<Actor> Actors { get; set; }
     }
 }

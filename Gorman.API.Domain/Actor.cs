@@ -7,6 +7,9 @@
         [JsonProperty("id")]
         public long Id { get; set; }
 
+        [JsonProperty("activity_id")]
+        public long ActivityId { get; set; }
+
         [JsonProperty("map_id")]
         public long MapId { get; set; }
 
