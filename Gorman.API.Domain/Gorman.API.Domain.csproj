@@ -43,9 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Action.cs" />
+    <Compile Include="ActionSummary.cs" />
     <Compile Include="ActionType.cs" />
+    <Compile Include="ActivitySummary.cs" />
     <Compile Include="Activity.cs" />
     <Compile Include="Actor.cs" />
+    <Compile Include="ActorSummary.cs" />
     <Compile Include="BaseResource.cs" />
     <Compile Include="EndpointList.cs" />
     <Compile Include="Map.cs" />

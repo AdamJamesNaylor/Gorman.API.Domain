@@ -21,10 +21,13 @@ namespace Gorman.API.Domain {
         [JsonProperty("actions_url")]
         public string ActionsUrl { get; set; }
 
+        [JsonProperty("activities")]
+        public IEnumerable<ActivitySummary> Activities { get; set; }
+
         [JsonProperty("actions")]
-        public IEnumerable<Action> Actions { get; set; }
+        public IEnumerable<ActionSummary> Actions { get; set; }
 
         [JsonProperty("actors")]
-        public IEnumerable<Actor> Actors { get; set; }
+        public IEnumerable<ActorSummary> Actors { get; set; }
     }
 }
