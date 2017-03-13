@@ -6,9 +6,6 @@ namespace Gorman.API.Domain {
     public class Activity
         : BaseResource {
 
-        [JsonProperty("id")]
-        public long Id { get; set; }
-
         [JsonProperty("parent_id")]
         public long ParentId { get; set; }
 
@@ -21,13 +18,19 @@ namespace Gorman.API.Domain {
         [JsonProperty("actions_url")]
         public string ActionsUrl { get; set; }
 
-        [JsonProperty("activities")]
-        public IEnumerable<ActivitySummary> Activities { get; set; }
-
         [JsonProperty("actions")]
-        public IEnumerable<ActionSummary> Actions { get; set; }
+        public List<ActionSummary> Actions { get; set; }
+
+        [JsonProperty("activities_url")]
+        public string ActivitiesUrl { get; set; }
+
+        [JsonProperty("activities")]
+        public List<ActivitySummary> Activities { get; set; }
+
+        [JsonProperty("actors_url")]
+        public string ActorsUrl { get; set; }
 
         [JsonProperty("actors")]
-        public IEnumerable<ActorSummary> Actors { get; set; }
+        public List<ActorSummary> Actors { get; set; }
     }
 }

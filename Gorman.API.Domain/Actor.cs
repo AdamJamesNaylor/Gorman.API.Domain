@@ -4,9 +4,6 @@
     public class Actor
         : BaseResource {
 
-        [JsonProperty("id")]
-        public long Id { get; set; }
-
         [JsonProperty("activity_id")]
         public long ActivityId { get; set; }
 

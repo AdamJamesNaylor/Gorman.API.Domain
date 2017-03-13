@@ -6,9 +6,6 @@ namespace Gorman.API.Domain {
     public class Map
         : BaseResource {
 
-        [JsonProperty("id")]
-        public long Id { get; set; }
-
         [JsonProperty("activities_url")]
         public string ActivitiesUrl { get; set; }
 

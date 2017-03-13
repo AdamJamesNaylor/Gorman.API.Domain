@@ -5,7 +5,5 @@ namespace Gorman.API.Domain {
     public class ActivitySummary
         : BaseResource {
 
-        [JsonProperty("id")]
-        public long Id { get; set; }
     }
 }

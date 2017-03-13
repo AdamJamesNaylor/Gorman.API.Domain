@@ -1,7 +1,5 @@
 ﻿namespace Gorman.API.Domain {
-    using Newtonsoft.Json;
-
-    public class ActorSummary
+    public class ActionParameterSummary
         : BaseResource {
 
     }
